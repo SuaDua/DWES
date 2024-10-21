@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-npm",
+  "version": "1.0.0",
+  "main": "EditordeNotas.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nota:crear": "node EditordeNotas.js 1",
+    "nota:eliminar": "node EditordeNotas.js 2",
+    "nota:salir": "node EditordeNotas.js 3"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

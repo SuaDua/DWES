@@ -1,0 +1,11 @@
+{
+  "name": "ejercicio2",
+  "version": "1.0.0",
+  "main": "date.js",
+  "scripts": {
+    "date": "node date.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
