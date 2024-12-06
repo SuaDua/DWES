@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Error: ENOENT: no such file or directory, open &#39;C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\exports\EJ1.note&#39;<br> &nbsp; &nbsp;at Object.writeFileSync (node:fs:2344:20)<br> &nbsp; &nbsp;at exportNote (file:///C:/Users/alvar/OneDrive/Documentos/GitHub/DWES/22-api-files/controllers/notesController.js:49:8)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\layer.js:95:5)<br> &nbsp; &nbsp;at next (C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\route.js:149:13)<br> &nbsp; &nbsp;at Route.dispatch (C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\route.js:119:3)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\layer.js:95:5)<br> &nbsp; &nbsp;at C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\index.js:284:15<br> &nbsp; &nbsp;at param (C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\index.js:365:14)<br> &nbsp; &nbsp;at param (C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\index.js:376:14)<br> &nbsp; &nbsp;at Function.process_params (C:\Users\alvar\OneDrive\Documentos\GitHub\DWES\22-api-files\node_modules\express\lib\router\index.js:421:3)</pre>
+</body>
+</html>
