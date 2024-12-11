@@ -1,0 +1,16 @@
+components:
+  schemas:
+    Nota:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        titulo:
+          type: string
+        contenido:
+          type: string
+      required:
+        - id
+        - titulo
+        - contenido

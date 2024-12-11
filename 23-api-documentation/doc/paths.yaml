@@ -1,0 +1,16 @@
+/notes:
+  post:
+    summary: Crear una nueva nota
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Nota'
+    responses:
+      '201':
+        description: Nota creada con éxito
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Nota'
