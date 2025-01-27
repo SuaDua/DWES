@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliente WebSocket</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    window.onload = () => {
+      const socket = io(); // Conectar al servidor WebSocket
+
+      // Mostrar estado de conexión
+      socket.on('connect', () => {
+        console.log('Conectado al servidor WebSocket');
+        document.getElementById('status').innerText = 'Conectado';
+      });
+
+      // Mostrar mensajes del servidor
+      socket.on('serverMessage', (message) => {
+        const list = document.getElementById('messages');
+        const item = document.createElement('li');
+        item.innerText = `Servidor: ${message}`;
+        list.appendChild(item);
+      });
+
+      // Enviar mensaje al servidor al hacer clic en el botón
+      document.getElementById('sendButton').onclick = () => {
+        const input = document.getElementById('messageInput');
+        const message = input.value;
+        if (message) {
+          socket.emit('clientMessage', message);
+          input.value = ''; // Limpiar campo de entrada
+        }
+      };
+    };
+  </script>
+</head>
+<body>
+  <h1>Cliente WebSocket</h1>
+  <p>Estado de la conexión: <span id="status">Desconectado</span></p>
+  <input id="messageInput" type="text" placeholder="Escribe un mensaje" />
+  <button id="sendButton">Enviar</button>
+  <ul id="messages"></ul>
+</body>
+</html>
