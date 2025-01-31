@@ -1,0 +1,46 @@
+Base de datos en mysql
+
+
+Esta base de datos tendrá 3 colecciones principales:
+
+1️⃣ Usuarios (users):
+
+Esta colección almacena información de los usuarios registrados.
+
+📌 Campos:
+
+_id: Identificador único del usuario.
+name: Nombre completo.
+email: Correo electrónico único.
+password: Contraseña cifrada.
+phone: Número de teléfono.
+role: "buyer" o "seller".
+created_at: Fecha de registro.
+
+2️⃣ Coches (cars).
+Cada coche representa un anuncio publicado en la plataforma.
+
+📌 Campos:
+
+_id: Identificador único del coche.
+seller_id: ID del usuario que vende el coche.
+brand: Marca del coche (Ej: "Ford", "BMW").
+model: Modelo del coche (Ej: "Focus", "X5").
+year: Año de fabricación.
+price: Precio en euros.
+mileage: Kilometraje del coche.
+fuel_type: "Gasolina", "Diésel", "Eléctrico", "Híbrido".
+transmission: "Manual" o "Automático".
+location: Ciudad donde se encuentra el coche.
+status: "Disponible", "Vendido".
+created_at: Fecha de publicación.
+
+3️⃣ Favoritos (favorites.
+Esta colección almacena los coches marcados como favoritos por los usuarios.
+
+📌 Campos:
+
+_id: Identificador único.
+user_id: ID del usuario que guarda el coche.
+car_id: ID del coche guardado.
+
